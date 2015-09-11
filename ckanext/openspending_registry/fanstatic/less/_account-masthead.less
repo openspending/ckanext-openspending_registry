@@ -1,0 +1,28 @@
+@account-masthead-bg: @primary;
+
+.account-masthead {
+  background-color:@account-masthead-bg;
+    min-height: 0px;
+  
+  .account {
+      ul li {
+        border:none;
+
+        a {
+          line-height: 40px;
+          color:#fff;
+          text-decoration:none;
+          font-weight:300;
+
+          &:hover {
+            background-color: rgba(247,247,247,0.10);
+            color: #fff;
+          }
+        }
+      }
+      
+      &.not-authed {
+          display: none;
+      }
+  }
+}

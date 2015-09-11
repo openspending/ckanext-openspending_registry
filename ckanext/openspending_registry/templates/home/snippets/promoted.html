@@ -1,0 +1,13 @@
+{% set intro = g.site_intro_text %}
+
+<div class="module-content">
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1>{{ _("OpenSpending Registry") }}</h1>
+      <p>
+        {% trans %}Searchable, shareable access to <a href="https://openspending.org/" rel="external">OpenSpending</a> datasets.
+        {% endtrans %}
+      </p>
+    {% endif %}
+</div>

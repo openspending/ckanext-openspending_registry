@@ -1,0 +1,35 @@
+.toolbar {
+  background-color:lighten(@primary, 5%);
+  .full-width;
+  margin-bottom:0;
+  
+  .breadcrumb {
+    font-size:14px;
+    opacity:0.8;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    li {
+      text-shadow:none;
+      
+      &.home .icon-home {
+        font-size:16px;
+      }
+      
+      a {
+        text-decoration:none;
+        color:inherit;
+      }
+      
+      &.active {
+        color:inherit;
+        font-weight:normal;
+        
+        a {
+          font-weight:inherit;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.search-form .search-input button {
+    i {
+        color:@primary;
+    }
+    &:hover {
+        i {
+            color: darken(@primary, 10%);
+        }
+    }
+}
+
+.homepage {
+    .hero {
+        background-color: @primary;
+        color: #fff;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        h1 {
+            font-weight: bold;
+        }
+        
+        .module-content {
+            padding: 0;
+            font-size: 20px;
+            
+            a {
+                color: inherit;
+                text-decoration: none;
+                border-bottom: dotted 1px #fff;
+            }
+        }
+        
+        .module-search.box {
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            
+            .heading {
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+            
+            form {
+                padding: 0;
+                background-color: transparent;
+                
+                .search-giant {
+                    input {
+                        border-color: #fff;
+                        box-shadow: none;
+                        
+                        &:focus {
+                            border-color: darken(@primary, 10%);
+                        }
+                    }
+                }
+            }
+            
+            .tags {
+                background-color: transparent;
+                height: 35px;
+                overflow: hidden;
+                margin-bottom: 10px;
+                
+                h3 {
+                    line-height:32px;
+                    margin: 0 20px 0 0;
+                    padding: 0;
+                    
+                    &:after {
+                        content: ':';
+                    }
+                }
+                
+                a.tag {
+                    margin: 0 30px 20px 0;
+                    color: @primary;
+                    
+                    &:after {
+                        background-color: @primary;
+                    }
+                    
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        
+        .stats.box {
+            background-color: transparent;
+            border: none;
+            
+            .inner {
+                padding: 0;
+                
+                li {
+                    text-align: center;
+                    
+                    a {
+                        display: inline-block;
+                        background-color: #fff;
+                        border-radius: @border-radius;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

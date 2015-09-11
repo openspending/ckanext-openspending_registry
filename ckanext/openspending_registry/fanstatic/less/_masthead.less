@@ -1,0 +1,36 @@
+.masthead {
+    background-color: @primary;
+    
+    .logo {
+        height: 75px;
+        display: table-cell;
+        vertical-align: middle;
+        
+        img {
+            height: 26px;
+        }
+    }
+    
+    .site-search.section {
+        display: none;
+    }
+    
+    .navigation {
+        margin-right: 0;
+        padding-bottom: 15px;
+        
+        @media (min-width: @large-screen) {
+            padding-top: 19px;
+        }
+        
+        .nav {
+            margin: 0;
+            
+            li a:hover, 
+            li.active a {
+                background-color: #fff;
+                color: @primary;
+            }
+        }
+    }
+}
